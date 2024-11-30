@@ -1,0 +1,91 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container Layout */
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background-color: #ffffff; /* Sidebar background updated to white */
+    color: #000000; /* Sidebar heading color updated to black */
+    width: 20%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #000000; /* Sidebar heading color set to black */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content Area Styles */
+  .content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .content section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Background of section body */
+  }
+  
+  .content section h1 {
+    background-color: #000000; /* Section heading in a black box */
+    color: #ffffff; /* Section heading text in white */
+    padding: 10px;
+    margin: -10px -10px 20px -10px; /* Ensure the black box spans the section's width */
+    border-radius: 5px 5px 0 0; /* Rounded corners at the top only */
+  }
+  
+  .content p,
+  .content ul li {
+    color: #333333; /* Text in sections styled for readability */
+  }
+  
+  .content ul {
+    padding-left: 20px;
+  }
+  
+  .content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .content a:hover {
+    text-decoration: underline;
+  }
+  
