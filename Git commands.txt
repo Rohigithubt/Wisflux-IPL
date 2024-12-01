@@ -1,0 +1,22 @@
+   Git Commands:-
+
+1. git config --global user.name "Your Name" 
+2. git config --list  
+3. git init
+4. git clone <repository-url>  
+5. git status
+6. git add <file> 
+7. git add .
+8. git commit -m "Your commit message"  
+9. git commit -am "Your commit message"  
+10. git branch  
+11. git branch <branch-name>  
+12. git checkout <branch-name>  
+13. git merge <branch-name> 
+14. git pull 
+15. git push  
+16. git remote -v  
+17. git stash  
+18. git stash pop  
+19. git reset <file>  
+20. git rm <file>  
