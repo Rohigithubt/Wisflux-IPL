@@ -1,0 +1,127 @@
+Q-1:-  What are the basic data types in TypeScript?
+Ans:- basic data types in TypeScript:
+
+      - Boolean
+      - Number
+      - String
+      - Array
+      - Tuple
+      - Enum
+      - Any
+      - Void
+      - Null
+      - Undefined
+      - Never
+      - Object
+
+Q-2:- What is Generic data type?
+Ans:- In TypeScript, generics are a way to create reusable components that work with various data types while providing type safety. By using generics, you can write functions, classes, and interfaces that work with any data type, but still enforce specific type constraints.
+
+Generics are typically used with angle brackets <> and type parameters.
+
+Q-3:- What is type inferring in TS?
+Ans:- Type inference in TypeScript is a feature that automatically determines the type of a variable or expression without explicit type annotations. TypeScript uses the context and the initial value assigned to infer the type, saving developers from having to manually specify types in many cases.
+
+Q-4:- What are the possible ways to define typing for functions?
+Ans:- the ways to define typing for functions in TypeScript:
+
+       Function Declaration
+
+       Function Expression
+
+       Arrow Function
+
+       Function as Type
+
+       Optional Parameters
+
+       Default Parameters
+
+       Rest Parameters
+
+Q-5:- How to define Generic type for Classes?
+Ans:- How to define Generic type for Classes
+In TypeScript,we can define generic types for classes to create reusable components that work with a variety of data types. Generics allow us to define a class with a placeholder for the type that can be specified when the class is instantiated.we can define a generic class:
+   
+  class Box<T> {
+    contents: T;
+
+    constructor(value: T) {
+        this.contents = value;
+    }
+
+    getContents(): T {
+        return this.contents;
+    }
+}
+
+const stringBox = new Box<string>("Hello");
+const numberBox = new Box<number>(123);
+
+
+
+Q-6:- Define the types in typescript for the given following JavaScript code.
+Todo:
+- Define type/interface for a single Todo object.
+- Define type for each function.
+- Do not use any (TS Data Type) type of typescript.
+Code: 
+var todos = [];
+function add(name, description) {
+ return todos.push({
+ name: name,
+ description: description,
+ done: false
+ });
+}
+function remove(index) {
+ return todos.splice(index, 1);
+}
+function list() {
+ todos.forEach(function(todo, index) {
+ console.log(index + " - " + todo.name);
+ });
+}
+function update(index, name, description) {
+ todos[index].name = name;
+ todos[index].description = description;
+ return todos[index];
+}
+
+Ans:- The types for JavaScript code in TypeScript:-
+      
+     (1) Interface for a single Todo Object:->
+          interface Todo {
+             name: string;
+            description: string;
+            done: boolean;
+          }
+
+      (2) Types for each functions:->
+          
+          let todos: Todo[] = [];
+
+function add(name: string, description: string): number {
+    return todos.push({
+        name: name,
+        description: description,
+        done: false
+    });
+}
+
+function remove(index: number): Todo[] {
+    return todos.splice(index, 1);
+}
+
+function list(): void {
+    todos.forEach(function(todo: Todo, index: number) {
+        console.log(index + " - " + todo.name);
+    });
+}
+
+function update(index: number, name: string, description: string): Todo {
+    todos[index].name = name;
+    todos[index].description = description;
+    return todos[index];
+}
+
